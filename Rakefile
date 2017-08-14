@@ -1,8 +1,10 @@
+require 'bundler/gem_tasks'
+
 require 'rubygems'
 require 'rubygems/package_task'
 require 'rake/testtask'
 
-#so we can: ssh host rake -f $hudson_workspace/sigar/Rakefile
+# So we can: ssh host rake -f $hudson_workspace/sigar/Rakefile
 Dir.chdir(File.dirname(__FILE__))
 
 props = {}
